@@ -220,17 +220,15 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  var resultado; 
-  if (numero > 0) {
-   resultado=(console.log ('Es positivo'));
-  } else if (numero < 0) {
-   resultado= (console.log ('Es negativo'));
-  } else {
-      resultado=false;
-    }
-   return resultado;   
-
-
+  if (numero>0){
+    console.log('Es positivo');
+  }  
+   else if (numero<0){
+    console.log('Es negativo');
+  }
+   else if (numero=0){
+    return false;
+  }
 }
 
 
