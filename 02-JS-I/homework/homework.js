@@ -212,7 +212,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random;
+  return Math.random(0,1);
 }
 
 function esPositivo(numero) {
@@ -221,19 +221,18 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   var resultado; 
-  if numero > 0
-  {
-    console.log "Es positivo";
-  }
-    else if numero < 0
-    {
-      console.log "Es negativo";
+  if (numero > 0) {
+   resultado=(console.log ('Es positivo'));
+  } else if (numero < 0) {
+   resultado= (console.log ('Es negativo'));
+  } else {
+      resultado=false;
     }
-    else if numero=0
-    {
-      return=false;
-    }
-  }
+   return resultado;   
+
+
+}
+
 
 
 
